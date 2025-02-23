@@ -1,4 +1,4 @@
-import { Box, Container, Typography, Grid2, Stack } from '@mui/material';
+import { Box, Container, Grid2, Stack, Typography } from '@mui/material';
 
 export default function Footer() {
   return (
@@ -15,9 +15,6 @@ export default function Footer() {
       }}
     >
       <Container maxWidth='sm'>
-        <Typography variant='body1' align='center'>
-          Footer Content Here
-        </Typography>
         <Grid2
           container
           spacing={2}
@@ -36,12 +33,26 @@ export default function Footer() {
           </Grid2>
           <Grid2 size={{ md: 8, xs: 12 }}>
             <Box component='section' sx={{ p: 2 }}>
-              <p>
+              <Typography variant='body1' component={'p'}>
                 <strong>Yhteystiedot</strong>
-              </p>
-              <p>Y-Tunnus: 1-234525</p>
-              <p>email@yritys.fi</p>
-              <p>+358 501234567</p>
+              </Typography>
+              <Typography variant='body2' component={'p'}>
+                Y-Tunnus: 1-234525
+              </Typography>
+              <Typography variant='body2' component={'p'}>
+                email@yritys.fi
+              </Typography>
+              <Typography variant='body2' component={'p'}>
+                +358 501234567
+              </Typography>
+              <Typography
+                variant='body2'
+                color='textSecondary'
+                component={'p'}
+                sx={{ mt: 2 }}
+              >
+                © 2021 Laskuri OY
+              </Typography>
             </Box>
           </Grid2>
         </Grid2>
