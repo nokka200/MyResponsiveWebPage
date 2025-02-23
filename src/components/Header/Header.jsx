@@ -7,7 +7,9 @@ export default function Header({ mode, onModeChange }) {
     <AppBar position='static'>
       <Toolbar>
         <Box sx={{ display: 'flex', alignItems: 'center' }}>
-          <img src={logo} alt='Logo' style={{ height: 40, marginRight: 8 }} />
+          <a href='https://www.google.com' style={{ textDecoration: 'none' }}>
+            <img src={logo} alt='Logo' style={{ height: 40, marginRight: 8 }} />
+          </a>
           <Typography variant='h6' component='div'>
             Laskuri OY
           </Typography>
