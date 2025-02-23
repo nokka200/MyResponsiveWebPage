@@ -35,7 +35,15 @@ export const Home = () => {
         <Typography variant='h4' component='h2' gutterBottom align='center'>
           Hinnasto
         </Typography>
-        <Grid2 container spacing={2}>
+        <Grid2
+          container
+          spacing={2}
+          direction='row'
+          sx={{
+            justifyContent: 'center',
+            alignItems: 'center',
+          }}
+        >
           <Grid2 size={{ md: 4, xs: 12 }}>
             <Box component='section' sx={{ p: 2 }}>
               <img src={kuva03} style={{ width: '100%' }} />
