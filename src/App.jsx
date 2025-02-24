@@ -3,7 +3,6 @@ import { ThemeProvider, createTheme } from '@mui/material/styles';
 import { CssBaseline } from '@mui/material';
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
-import './styles/App.css';
 import { Home } from './pages/Home';
 
 function App() {
