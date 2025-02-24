@@ -1,18 +1,15 @@
-import { Container, Typography, Box, Grid2 } from '@mui/material';
+import { Container, Typography, Box } from '@mui/material';
 import { HomeTitle } from '../components/Home/HomeTitle';
 import { InformationSection } from '../components/Home/InformationSection';
-import { InfoTextBox } from '../components/Home/InfoTextBox';
-import kuva03 from '../assets/kuva03.jpg';
-import kuva02 from '../assets/kuva02.jpg';
-/**
- * TODO
- * 1. Koko selainäkymän täyttävä taustakuva
- * 2. Paljon tekstiä
- * 3. Muu sisältä (Lomake)
- *
- */
+import { PriceSection } from '../components/Home/PriceSection';
+import { EmailForm } from '../components/Home/EmailForm';
 
 export const Home = () => {
+  const handleEmailSubmit = (email) => {
+    // Handle sending the email, e.g., call an API endpoint.
+    console.log('Email submitted:', email);
+  };
+
   return (
     <Container
       maxWidth='lg'
@@ -39,37 +36,37 @@ export const Home = () => {
         component='section'
         sx={{ p: 2, border: '1px solid black', marginBottom: 2 }}
       >
-        <Typography variant='h4' component='h2' gutterBottom align='center'>
-          Hinnasto
-        </Typography>
-        <Grid2
-          container
-          spacing={2}
-          direction='row'
-          sx={{
-            justifyContent: 'center',
-            alignItems: 'center',
-          }}
-        >
-          <Grid2 size={{ md: 4, xs: 12 }}>
-            <Box component='section' sx={{ p: 2 }}>
-              <img src={kuva03} style={{ width: '100%' }} />
-            </Box>
-          </Grid2>
-          <Grid2 size={{ md: 4, xs: 12 }}>
-            <InfoTextBox
-              title='Tuotteemme'
-              text='Per kuukausi: 10€
-            Vuodelta: 90€'
-            />
-          </Grid2>
-          <Grid2 size={{ md: 4, xs: 12 }}>
-            <Box component='section' sx={{ p: 2 }}>
-              <img src={kuva02} style={{ width: '100%' }} />
-            </Box>
-          </Grid2>
-        </Grid2>
+        <PriceSection />
       </Box>
+      <Box
+        component='section'
+        sx={{ p: 2, border: '1px solid black', marginBottom: 2 }}
+      >
+        <Typography variant='body1' gutterBottom>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Exercitationem pariatur repellat sequi culpa eum minima laboriosam hic
+          corrupti modi optio, consequatur vitae quos impedit eos maiores
+          recusandae! Assumenda, dignissimos ab. Lorem ipsum dolor sit amet
+          consectetur adipisicing elit. Exercitationem pariatur repellat sequi
+          culpa eum minima laboriosam hic corrupti modi optio, consequatur vitae
+          quos impedit eos maiores recusandae! Assumenda, dignissimos ab. Lorem
+          ipsum dolor sit amet consectetur adipisicing elit. Exercitationem
+          pariatur repellat sequi culpa eum minima laboriosam hic corrupti modi
+          optio, consequatur vitae quos impedit eos maiores recusandae!
+          Assumenda, dignissimos ab. Lorem ipsum dolor sit amet consectetur
+          adipisicing elit. Exercitationem pariatur repellat sequi culpa eum
+          minima laboriosam hic corrupti modi optio, consequatur vitae quos
+          impedit eos maiores recusandae! Assumenda, dignissimos ab. Lorem ipsum
+          dolor sit amet consectetur adipisicing elit. Exercitationem pariatur
+          repellat sequi culpa eum minima laboriosam hic corrupti modi optio,
+          consequatur vitae quos impedit eos maiores recusandae! Assumenda,
+          dignissimos ab. Lorem ipsum dolor sit amet consectetur adipisicing
+          elit. Exercitationem pariatur repellat sequi culpa eum minima
+          laboriosam hic corrupti modi optio, consequatur vitae quos impedit eos
+          maiores recusandae! Assumenda, dignissimos ab.
+        </Typography>
+      </Box>
+      <EmailForm onEmailSubmit={handleEmailSubmit} />
     </Container>
   );
 };
