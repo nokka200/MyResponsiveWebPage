@@ -4,6 +4,13 @@ import { InformationSection } from '../components/Home/InformationSection';
 import { InfoTextBox } from '../components/Home/InfoTextBox';
 import kuva03 from '../assets/kuva03.jpg';
 import kuva02 from '../assets/kuva02.jpg';
+/**
+ * TODO
+ * 1. Koko selainäkymän täyttävä taustakuva
+ * 2. Paljon tekstiä
+ * 3. Muu sisältä (Lomake)
+ *
+ */
 
 export const Home = () => {
   return (
