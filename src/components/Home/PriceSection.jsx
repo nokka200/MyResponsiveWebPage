@@ -6,7 +6,13 @@ import { InfoTextBox } from './InfoTextBox';
 export const PriceSection = () => {
   return (
     <>
-      <Typography variant='h4' component='h2' gutterBottom align='center'>
+      <Typography
+        id='price'
+        variant='h4'
+        component='h2'
+        gutterBottom
+        align='center'
+      >
         Hinnasto
       </Typography>
       <Grid2

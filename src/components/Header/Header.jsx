@@ -21,10 +21,10 @@ export default function Header({ mode, onModeChange }) {
             flexGrow: 1,
           }}
         >
-          <Link href='#' color='inherit' underline='none' sx={{ ml: 2 }}>
+          <Link href='#feature' color='inherit' underline='none' sx={{ ml: 2 }}>
             Ominaisuudet
           </Link>
-          <Link href='#' color='inherit' underline='none' sx={{ ml: 2 }}>
+          <Link href='#price' color='inherit' underline='none' sx={{ ml: 2 }}>
             Hinnasto
           </Link>
         </Box>

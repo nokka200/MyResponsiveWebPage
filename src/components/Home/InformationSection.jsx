@@ -8,7 +8,7 @@ export const InformationSection = () => {
     <Grid2 container spacing={2}>
       <HeroPicture />
       <Grid2 size={12}>
-        <Box component='section' sx={{ p: 2 }}>
+        <Box id='feature' component='section' sx={{ p: 2 }}>
           <InfoSectionTitle title='Mitä voimme tarjota sinun yrityksellesi' />
         </Box>
       </Grid2>
