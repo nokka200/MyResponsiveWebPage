@@ -3,6 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://nokka200.github.io/MyResponsiveWebPage/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
